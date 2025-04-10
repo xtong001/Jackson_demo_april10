@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson | Explore. Move. Reflect.</title>
+    <style>
+        /* Modern sans-serif font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+        
+        /* Left side - Text content */
+        .text-side {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 5%;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #666;
+        }
+        
+        /* Navigation */
+        nav {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 25px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #3A86FF;
+            text-decoration: underline;
+        }
+        
+        /* Right side - Image */
+        .image-side {
+            width: 50%;
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 50%;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+                height: auto;
+                overflow: auto;
+            }
+            
+            .text-side, .image-side {
+                width: 100%;
+            }
+            
+            .image-side {
+                height: 50vh;
+            }
+            
+            nav {
+                position: static;
+                margin-bottom: 30px;
+            }
+            
+            nav ul {
+                justify-content: center;
+            }
+            
+            nav li {
+                margin: 0 15px;
+            }
+            
+            footer {
+                width: 100%;
+                position: static;
+                padding: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-side">
+        <nav>
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Deep Stuff</a></li>
+                <li><a href="#">Random Thoughts</a></li>
+            </ul>
+        </nav>
+        
+        <header>
+            <h1>Jackson</h1>
+            <p class="tagline">Explore. Move. Reflect.</p>
+        </header>
+        
+        <footer>
+            Hit me up if you wanna talk about waves or Random Thoughts
+        </footer>
+    </div>
+    
+    <div class="image-side"></div>
+</body>
+</html>
