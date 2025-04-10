@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Jackson | Explore. Move. Reflect.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Consistent with homepage */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'IBM Plex Mono', monospace;
+            background: linear-gradient(rgba(248, 249, 250, 0.9), rgba(248, 249, 250, 0.9)), 
+                        url('https://images.unsplash.com/photo-1499591934245-40b55745b905?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #2a3439;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Navigation - identical to homepage */
+        nav {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+        
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #4a6b7d;
+            font-family: 'Arimo', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+        
+        nav a:hover {
+            color: #2a3439;
+            text-decoration: underline;
+        }
+
+        /* Modern layout with white space */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 100px 40px 60px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        /* Typography matching homepage */
+        h1 {
+            font-family: 'Arimo', sans-serif;
+            font-size: 2.8rem;
+            color: #2a3439;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #4a6b7d;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Arimo', sans-serif;
+            color: #4a6b7d;
+            font-size: 1.5rem;
+            margin: 50px 0 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5em;
+        }
+
+        /* Content elements */
+        .intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background-color: rgba(74, 107, 125, 0.1);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .interest-card {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .interest-card h3 {
+            margin-top: 0;
+            color: #4a6b7d;
+        }
+
+        /* Footer - identical to homepage */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #4a6b7d;
+            font-size: 0.9rem;
+            margin-top: 60px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 80px 20px 40px;
+            }
+            
+            nav {
+                position: static;
+                text-align: center;
+                padding: 20px 0;
+            }
+            
+            nav a {
+                margin: 0 10px;
+                display: inline-block;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .interests-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="#">Deep Stuff</a>
+        <a href="#">Random Thoughts</a>
+    </nav>
+
+    <div class="container">
+        <h1>Hello, I'm Jackson</h1>
+        
+        <div class="section">
+            <p class="intro">
+                Welcome to my corner of the internet! I'm a 25-year-old ocean wanderer and sunset collector 
+                who believes life's best moments happen between plans. This is where I share my journeys, 
+                both across continents and through the winding paths of everyday curiosity.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>Who I Am</h2>
+            
+            <div class="highlight-box">
+                <p>
+                    <strong>Background:</strong> Born between waves and mountains, I've been splitting my time 
+                    between coastal towns and the open road since I could walk. Currently based wherever 
+                    the surf forecast looks promising.
+                </p>
+                
+                <p>
+                    <strong>Passions:</strong> Ocean conservation, spontaneous road trips, and documenting 
+                    the poetry in ordinary moments. I'm most alive when knee-deep in saltwater or 
+                    scribbling thoughts in weathered notebooks.
+                </p>
+                
+                <p>
+                    <strong>Goals:</strong> To live intentionally without overplanning, protect our oceans, 
+                    and inspire others to embrace the beauty of unscripted living.
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>What Moves Me</h2>
+            
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <h3>Ocean Adventures</h3>
+                    <p>Freediving • Surf forecasting • Marine biology • Beach cleanups</p>
+                </div>
+                
+                <div class="interest-card">
+                    <h3>Creative Pursuits</h3>
+                    <p>Travel journaling • Analog photography • Writing micro-poetry</p>
+                </div>
+                
+                <div class="interest-card">
+                    <h3>Simple Pleasures</h3>
+                    <p>Campfire coffee • Vinyl hunting • Hammock naps • Street food</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Personal Philosophy</h2>
+            <p>
+                I believe in saltwater therapy, the wisdom of tides, and that the best conversations 
+                happen when we're not trying to impress anyone. Life's too short for perfect grammar 
+                and filtered sunsets - I'll take raw, messy authenticity every time.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        Hit me up if you wanna talk about waves or Random Thoughts
+    </footer>
+</body>
+</html>
